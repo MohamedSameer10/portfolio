@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.864);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 130px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.481);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
+}
+
+header h1 {
+    word-spacing: 8px;
+    font-size: 28px;
+}
+
+header nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+header .res-bar {
+    display: none;
+}
+
+
+main .hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 0 20px;
+}
+
+main .hero-section .profile-img {
+    width: 300px;
+    height: 300px;
+}
+
+main .hero-section .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+main .hero-section .content,
+main .section,
+main .experience {
+    text-align: center;
+}
+
+main .hero-section .content h3 {
+    font-size: 14px;
+    color: rgb(73, 73, 73);
+}
+
+main a button {
+    background-color: black;
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+    color: white;
+    margin-bottom: 20px;
+}
+
+main .hero-section .content .links a {
+    margin-left: 10px;
+}
+
+main .hero-section .content .links i {
+    font-size: 28px;
+}
+
+main .hero-section .content .links img {
+    width: 25px;
+    height: 25px;
+}
+
+main .section {
+    min-height: calc(100vh - 82px);
+}
+
+main .abt img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 20px 0;
+}
+
+main .abt,
+main .exp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+main .abt .boxes .b {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+main .box {
+    width: 100%;
+    border: 1px solid rgb(118, 118, 118);
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+
+
+main .abt .para {
+    text-align: justify;
+    margin-top: 50px;
+}
+
+main #experience {
+    padding: 20px;
+}
+
+main .section>p {
+    margin-top: 15px;
+}
+
+main .tech,
+main .stack {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    align-items: center;
+    gap: 15px;
+}
+
+main .exp {
+    flex-direction: column;
+    height: fit-content;
+    width: 70%;
+    margin: 40px auto;
+}
+
+main .pro {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+main .pro img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main #contact {
+    padding: 10px;
+    height: fit-content;
+}
+
+main #contact .box {
+    width: fit-content;
+    margin: 40px auto;
+}
+
+main #contact .box a {
+    font-size: 14px;
+    margin: 10px;
+}
+
+main #contact,
+footer {
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+main .section,
+main #experience,
+main #contact {
+    padding-top: 100px;
+}
+
+
+@media screen and (max-width : 960px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    main .abt img {
+        height: 460px;
+    }
+
+}
+
+@media screen and (max-width : 815px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav a {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header nav {
+        width: 60%;
+    }
+
+    main .hero-section {
+        gap: 30px;
+    }
+
+    main .hero-section .content h1 {
+        font-size: 28px;
+    }
+
+    main .abt .para {
+        margin-top: 10px;
+    }
+
+    main .abt {
+        gap: 15px;
+    }
+
+    main .abt .boxes .b .box h2 {
+        font-size: 18px;
+    }
+
+    main .abt .boxes .b .box p {
+        font-size: 12px;
+    }
+
+    main .abt .para,
+    main .section p {
+        font-size: 14px;
+    }
+
+    main .exp {
+        width: 100%;
+    }
+
+    main .section,
+    main #experience,
+    main #contact,
+    main #projects {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width : 680px) {
+
+    header {
+        padding: 20px 50px;
+        gap: 15px;
+    }
+
+    header .res-bar {
+        display: block;
+        font-size: 26px;
+    }
+
+    header nav {
+        position: fixed;
+        flex-direction: column;
+        top: 70px;
+        right: -150px;
+        background-color: transparent;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: fit-content;
+        padding: 10px 30px;
+        background-color: black;
+        height: calc(100vh - 70px);
+        transition: all 0.2s;
+    }
+
+    main .hero-section {
+        height: 113vh;
+    }
+
+    header nav a {
+        color: white;
+    }
+
+
+    header .res {
+        right: 0;
+    }
+
+    main .hero-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main .hero-section .profile-img {
+        width: 270px;
+        height: 270px;
+    }
+
+    main .abt {
+        flex-direction: column;
+    }
+
+    main .section h2,
+    main #contact h2 {
+        font-size: 16px;
+    }
+
+    main .section h1,
+    main #contact h1 {
+        font-size: 24px;
+    }
+
+    main .stack,
+    main .pro {
+        flex-direction: column;
+    }
+
+    main #contact .box a,
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 380px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    main .hero-section .profile-img {
+        width: 230px;
+        height: 230px;
+    }
+
+    main .hero-section .content h2 {
+        font-size: 20px;
+    }
+
+    main .hero-section .content h1 {
+        font-size: 24px;
+    }
+
+    main .abt img {
+        width: 250px;
+    }
+
+    main #contact .box a {
+        font-size: 10px;
+    }
+}
